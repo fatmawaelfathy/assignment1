@@ -1,0 +1,29 @@
+<div class="contact m-4">
+    <div class="container">
+        <div class="contact-hero text-center fw-bold">
+            <h3>CONATCT SECTION</h3>
+            <div class="d-flex align-items-center justify-content-center mb-3 ">
+                <div class="iconss me-3"> </div>
+                   <i class="fa-solid fa-star"></i>
+                   <div class="iconss ms-3" ></div>
+                </div>
+        </div>
+        <form  class="w-50 p-3 mx-auto mt-5 ">
+            
+             <label   placeholder="userName" name="userName" class="form-control border-0 border-bottom py-3 position-relative "   class="position-relative top-0 __top"   *ngIf=" isHovered">User Name: {{ username }}  </label>
+            <input    (ngModelChange)="username"  (keyup)="isHovered = true" (blur)="isHovered = true"placeholder="userName" name="userName" class="form-control border-0 border-bottom py-3 position-relative " >
+            <label  for="userAge" class="position-relative top-0 __top"  *ngIf="userAge || hoverr">userAge : {{ userAge }} </label>
+            <input  (ngModelChange)="userAge"   (keyup)="hoverr = true" (blur)="hoverr = true" id="userAge" type="text" placeholder="userAge" name="userName" class="form-control border-0 border-bottom py-3 position-relative ">
+            <label  for="userEmail" class="position-relative top-0 __top"  *ngIf="userEmail || email"> userEmail: {{ userEmail }}  </label>
+            <input  (ngModelChange)="userEmail"   (keyup)="email = true" (blur)="email = true" id="userEmail" type="text" placeholder="userEmail" name="userName" class="form-control border-0 border-bottom py-3 position-relative ">
+            <label  for="userPassword" class="position-relative top-0 __top"  *ngIf=" Hovered">userPassword : {{ userPassword }} </label>
+            <input  (ngModelChange)="userPassword"   (keyup)="Hovered = true" (blur)="Hovered = true" id="userPassword" type="text" placeholder="userPassword" name="userName" class="form-control border-0 border-bottom py-3 position-relative ">
+            <button class="btn mt-4 text-white" style="background-color: #1abc9c;"  >send message </button> 
+             
+        </form>
+    </div>
+</div>
+
+
+
+

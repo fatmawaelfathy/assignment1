@@ -1,0 +1,118 @@
+<!-- 
+ <div class="w-100 text-light About">
+    <div class="container d-flex justify-content-center align-items-center flex-column my-3">
+        <div class="portfolio-contact text-center">
+            <h3>PORTFOLIO COMPONENT</h3>
+            <div class="d-flex align-items-center  justify-content-center mb-3 ">
+                <div class="iconss me-3"> </div>
+                   <i class="fa-solid fa-star text-dark" ></i>
+                   <div class="iconss ms-3" ></div>
+                </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row"(click)="getDet($event)" >
+            <div  class="col-md-4 ">
+                <div class="item my-3">
+                <div  class="imgs position-relative ">
+                <img src="../../assets/img/poert1.png"   class="w-100 rounded-2" alt="">
+                <div  class="layer  position-absolute rounded-2  w-100 top-0 h-100 d-flex justify-content-center align-items-center">
+                    <i  class="text-white fa-solid fa-plus fa-6x"></i>
+                </div>
+            </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item my-3">
+                    <div  class="imgs position-relative ">
+                    <img src="../../assets/img/port2.png"   class="w-100 rounded-2" alt="">
+                    <div  class="layer  position-absolute rounded-2  w-100 top-0 h-100 d-flex justify-content-center align-items-center">
+                        <i  class="text-white fa-solid fa-plus fa-6x"></i>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item my-3">
+                    <div  class="imgs position-relative ">
+                    <img src="../../assets/img/port3.png"   class="w-100 rounded-2" alt="">
+                    <div  class="layer  position-absolute rounded-2  w-100 top-0 h-100 d-flex justify-content-center align-items-center">
+                        <i  class="text-white fa-solid fa-plus fa-6x"></i>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item my-3">
+                    <div  class="imgs position-relative ">
+                    <img src="../../assets/img/port3.png"   class="w-100 rounded-2" alt="">
+                    <div  class="layer  position-absolute rounded-2  w-100 top-0 h-100 d-flex justify-content-center align-items-center">
+                        <i  class="text-white fa-solid fa-plus fa-6x"></i>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item my-3">
+                    <div  class="imgs position-relative ">
+                    <img src="../../assets/img/port2.png"   class="w-100 rounded-2" alt="">
+                    <div  class="layer  position-absolute rounded-2  w-100 top-0 h-100 d-flex justify-content-center align-items-center">
+                        <i  class="text-white fa-solid fa-plus fa-6x"></i>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item my-3">
+                    <div  class="imgs position-relative ">
+                    <img src="../../assets/img/poert1.png"   class="w-100 rounded-2" alt="">
+                    <div  class="layer  position-absolute  rounded-2 w-100 top-0 h-100 d-flex justify-content-center align-items-center">
+                        <i  class="text-white fa-solid fa-plus fa-6x"></i>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="boxContainer d-flex justify-content-center align-items-center d-none" (click)="hideContainer()" [ngStyle]="{position: src ? 'fixed' : 'static'}">
+    <div class="boxItem">
+      <img [src]="src" class="w-100">
+    </div>
+</div>  -->
+
+
+
+
+
+
+
+
+
+
+<div class="w-100 text-light por">
+    <div class="container d-flex justify-content-center align-items-center flex-column my-3">
+        <div class="title d-block">
+            <h2 Class="fs-1 fw-bold">PORTFOLIO COMPONENT</h2>
+        </div>
+        <div class="title line-wrapper mb-3"><i class="fa-solid fa-star star"></i></div>
+    </div>
+    <div class="container">
+        <div class="row" (click)="getDet($event)">
+            <div *ngFor="let img of imgs" class="col-md-4">
+                <div  class="item my-3"><img [src]="img"
+                        class="w-100 rounded">
+                    <div class="overlay d-flex justify-content-center align-items-center rounded">
+                        <div class="icon">
+                            <i class="fa-solid fa-plus fs-1 fw-bold"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="boxContainer d-flex justify-content-center align-items-center d-none" (click)="hideContainer()" [ngStyle]="{position: src ? 'fixed' : 'static'}">
+            <div class="boxItem">
+              <img [src]="src" class="w-100">
+            </div>
+        </div>
